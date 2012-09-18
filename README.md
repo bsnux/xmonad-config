@@ -1,7 +1,9 @@
 xmonad-config
 =============
 
-Configuration files for XMonad with different desktop environments
+Configuration files for getting XMonad working with different desktop environments.
+
+Choose right file for your desktop environment.
 
 These files have been tested with following distros:
 
