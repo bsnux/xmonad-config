@@ -11,3 +11,7 @@ These files have been tested with following distros:
 * Fedora 15.
 
 Don't forget to copy **xmonad.hs** file to your **~/.xmonad/** directory.
+
+Each time you change **xmonad.hs** file, you should run following command:
+
+    $ xmonad --recompile
