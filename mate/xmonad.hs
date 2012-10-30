@@ -51,5 +51,6 @@ main = do
 myKeys = [  (("M4-f"), spawn "firefox")
            ,(("M4-e"), spawn "gvim")
            ,(("M4-i"), spawn "pidgin")
+           ,(("M4-c"), spawn "google-chrome")
            ,(("M4-z"), kill)
          ]
