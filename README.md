@@ -15,3 +15,5 @@ Don't forget to copy **xmonad.hs** file to your **~/.xmonad/** directory.
 Each time you change **xmonad.hs** file, you should run following command:
 
     $ xmonad --recompile
+
+[Cheatsheet](http://www.haskell.org/haskellwiki/Image:Xmbindings.png)
