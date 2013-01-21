@@ -16,4 +16,8 @@ Each time you change **xmonad.hs** file, you should run following command:
 
     $ xmonad --recompile
 
+In order to use **XMonad** with *MATE** you need to execute following commmand:
+
+    $ mateconftool-2 -s /desktop/mate/session/required_components/windowmanager xmonad --type string
+
 [Cheatsheet](http://www.haskell.org/haskellwiki/Image:Xmbindings.png)
