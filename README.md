@@ -1,7 +1,8 @@
-xmonad-config
-=============
+# xmonad-config
 
 Configuration files for getting XMonad working with different desktop environments.
+
+## Desktop managers
 
 Choose right file for your desktop environment.
 
@@ -25,5 +26,37 @@ Instead of executing mentioned command, it's possible to create a startup shortc
     $ /usr/bin/xmonad --replace
 
 Each time you computer boots the command above will be executed and your default window manager will be **XMonad**
+
+## Just window manager
+
+If you want to use *xmonad* just as a window manager, then you should use files
+on `plain` folder. There you'll find configuration for *xmonad + xmobar*.
+
+`mod4` is `Alt` in these configuration files.
+
+Configuration has been tested on the following operating systems:
+
+* Fedora 27
+
+### Installation
+
+```
+$ git clone https://github.com/bsnux/xmonad-config.git
+$ mkdir ~/.xmonad
+$ ln -s xmonad-config/plain/xmonad.hs ~/.xmonad/xmonad.hs
+$ ln -s xmonad-config/plain/dot_xmobarrc ~/.xmobarrc  
+```
+
+## Cheatsheet
+
+* `mod4 + q`: Restart xmonad
+* `mod4 + shift + enter`: Launch new terminal
+* `mod4 + 1`: Go to workspace 1
+* `mod4 + shit + 2`: Move current window to workspace 2
+* `mod4 + h`: Make right window bigger
+* `mod4 + l`: Make left window bigger
+* `alt + tab`: Switch focus between windows in same workspace
+* `mod4 + space`: Cycle between layouts
+* `mod4 + p`: Launch command (`dzen2` is required)
 
 [Cheatsheet](http://www.haskell.org/haskellwiki/Image:Xmbindings.png)

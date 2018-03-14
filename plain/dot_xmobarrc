@@ -1,0 +1,44 @@
+Config { bgColor = "black"
+       , fgColor = "grey"
+       -- , position = TopW L 85
+       , commands = [ 
+		   Run DynNetwork     [ "--template" , "<dev>: <tx>kB/s|<rx>kB/s"
+                             , "--Low"      , "1000"       -- units: B/s
+                             , "--High"     , "5000"       -- units: B/s
+                             , "--low"      , "darkgreen"
+                             , "--normal"   , "darkorange"
+                             , "--high"     , "darkred"
+                             ] 10
+          	    -- battery monitor
+		    , Run Battery [ "--template" , "Batt: <acstatus>"
+		    		    , "--Low"      , "10"        -- units: %
+		    		    , "--High"     , "80"        -- units: %
+		    		    , "--low"      , "darkred"
+		    		    , "--normal"   , "darkorange"
+		    		    , "--high"     , "darkgreen"
+		    		    , "--" -- battery specific options
+		    		              -- discharging status
+		    		              , "-o"	, "<left>% (<timeleft>)"
+		    		              -- AC "on" status
+		    		              , "-O"	, "<fc=#dAA520>Charging</fc>"
+		    		              -- charged status
+		    		              , "-i"	, "<fc=#006000>Charged</fc>"
+		    		    ] 50
+	    	    , Run Cpu ["-L","15","-H","50","--normal","green","--high","red"] 10
+		    , Run Memory         [ "--template" ,"Mem: <usedratio>%"
+		     			     , "--Low"      , "20"        -- units: %
+		     			     , "--High"     , "90"        -- units: %
+		     			     , "--low"      , "darkgreen"
+		     			     , "--normal"   , "darkorange"
+		     			     , "--high"     , "darkred"
+		     			     ] 10
+
+                    , Run Swap [] 10
+		    , Run Weather "KSMO" ["--template", "<skyCondition> * <fc=#4682B4><tempC></fc>°C"] 36000
+                    , Run Date "%a %b %_d %Y %H:%M" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %battery% | %cpu% | %memory% * %swap% | %dynnetwork% | %KSMO% | %date%"
+       }
