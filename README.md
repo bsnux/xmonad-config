@@ -56,6 +56,7 @@ $ ln -s xmonad-config/plain/dot_xmobarrc ~/.xmobarrc
 * `mod4 + shit + 2`: Move current window to workspace 2
 * `mod4 + h`: Make right window bigger
 * `mod4 + l`: Make left window bigger
+* `mod4 + shift + j`: Switch windows
 * `alt + tab`: Switch focus between windows in same workspace
 * `mod4 + space`: Cycle between layouts
 * `mod4 + p`: Launch command (`dzen2` is required)
