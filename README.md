@@ -34,6 +34,14 @@ on `plain` folder. There you'll find configuration for *xmonad + xmobar*.
 
 `mod4` is `Alt` in these configuration files.
 
+If you want to use notifications, then you can use `stalonetray`:
+
+```
+$ sudo yum install stalonetray
+$ touch ~/.stalonetrayrc
+$ stalonetray &
+```
+
 Configuration has been tested on the following operating systems:
 
 * Fedora 27
@@ -62,3 +70,5 @@ $ ln -s xmonad-config/plain/dot_xmobarrc ~/.xmobarrc
 * `mod4 + p`: Launch command (`dzen2` is required)
 
 [Cheatsheet](http://www.haskell.org/haskellwiki/Image:Xmbindings.png)
+
+[Useful guide](http://beginners-guide-to-xmonad.readthedocs.io/)
