@@ -50,6 +50,7 @@ $ ln -s xmonad-config/plain/dot_xmobarrc ~/.xmobarrc
 ## Cheatsheet
 
 * `mod4 + q`: Restart xmonad
+* `mod4 + shift + q`: Close xmonad
 * `mod4 + shift + enter`: Launch new terminal
 * `mod4 + 1`: Go to workspace 1
 * `mod4 + shit + 2`: Move current window to workspace 2
