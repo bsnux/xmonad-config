@@ -67,7 +67,9 @@ $ ln -s xmonad-config/plain/dot_xmobarrc ~/.xmobarrc
 * `mod4 + shift + j`: Switch windows
 * `alt + tab`: Switch focus between windows in same workspace
 * `mod4 + space`: Cycle between layouts
-* `mod4 + p`: Launch command (`dzen2` is required)
+* `mod4 + shift + space`: Reset the layouts on the current workspace to default
+* `mod4 + p`: Launch command (`dmenu` is required)
+* `mod4 + b`: Hide status bar
 
 [Cheatsheet](http://www.haskell.org/haskellwiki/Image:Xmbindings.png)
 
