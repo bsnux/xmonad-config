@@ -70,6 +70,8 @@ $ ln -s xmonad-config/plain/dot_xmobarrc ~/.xmobarrc
 * `mod4 + shift + space`: Reset the layouts on the current workspace to default
 * `mod4 + p`: Launch command (`dmenu` is required)
 * `mod4 + b`: Hide status bar
+* `mod-button1`: Set the window to floating mode and move by dragging
+* `mod-button3`: Set the window to floating mode and resize by dragging
 
 [Cheatsheet](http://www.haskell.org/haskellwiki/Image:Xmbindings.png)
 
